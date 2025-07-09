@@ -1,0 +1,179 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 11 Cobrander, 11, LIC=D0D7S-L4V2W-63FMB-2QYYF-2XWRG-A8U7I
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  D:\SF\keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      CMSIS_AGDI.dll V1.28.3.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+D:\Project\STM32-HAL\PCA9685\MDK-ARM\PCA9685.uvprojx
+Project File Date:  06/29/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\SF\keil\ARM\ARMCC\Bin'
+Build target 'PCA9685'
+assembling startup_stm32g431xx.s...
+compiling stm32g4xx_ll_adc.c...
+compiling tim.c...
+../Core/Src/tim.c(51): error:  #20: identifier "motor_pwm_freq" is undefined
+    htim1.Init.Period = 170*1000000/motor_pwm_freq;
+../Core/Src/tim.c(196): error:  #20: identifier "motor_speed_calc_freq" is undefined
+    htim4.Init.Period = 1000000/
+peed_calc_freq;
+../Core/Src/tim.c: 0 warnings, 2 errors
+compiling stm32g4xx_hal_rcc_ex.c...
+compiling stm32g4xx_hal_msp.c...
+compiling usart.c...
+compiling gpio.c...
+compiling stm32g4xx_hal_flash.c...
+compiling main.c...
+compiling adc.c...
+compiling stm32g4xx_it.c...
+compiling bsp_pca9685.c...
+bsp_pca9685.c(74): warning:  #188-D: enumerated type mixed with another type
+          
+DA(1);
+bsp_pca9685.c(76): warning:  #188-D: enumerated type mixed with another type
+          
+CL(1); 
+bsp_pca9685.c(79): warning:  #188-D: enumerated type mixed with another type
+          
+DA(0);
+bsp_pca9685.c(81): warning:  #188-D: enumerated type mixed with another type
+          
+CL(0);
+bsp_pca9685.c(96): warning:  #188-D: enumerated type mixed with another type
+          
+CL(0);
+bsp_pca9685.c(97): warning:  #188-D: enumerated type mixed with another type
+          
+DA(0);
+bsp_pca9685.c(99): warning:  #188-D: enumerated type mixed with another type
+          
+CL(1);
+bsp_pca9685.c(101): warning:  #188-D: enumerated type mixed with another type
+          
+DA(1);
+bsp_pca9685.c(117): warning:  #188-D: enumerated type mixed with another type
+          
+CL(0);
+bsp_pca9685.c(118): warning:  #188-D: enumerated type mixed with another type
+          
+DA(0);
+bsp_pca9685.c(120): warning:  #188-D: enumerated type mixed with another type
+          if(!ack) 
+DA(0);
+bsp_pca9685.c(121): warning:  #188-D: enumerated type mixed with another type
+          else         
+DA(1);
+bsp_pca9685.c(122): warning:  #188-D: enumerated type mixed with another type
+          
+CL(1);
+bsp_pca9685.c(124): warning:  #188-D: enumerated type mixed with another type
+          
+CL(0);
+bsp_pca9685.c(125): warning:  #188-D: enumerated type mixed with another type
+          
+DA(1);
+bsp_pca9685.c(142): warning:  #188-D: enumerated type mixed with another type
+  	
+CL(0);
+bsp_pca9685.c(143): warning:  #188-D: enumerated type mixed with another type
+  	
+DA(1);
+bsp_pca9685.c(146): warning:  #188-D: enumerated type mixed with another type
+  	
+CL(1);
+bsp_pca9685.c(162): warning:  #188-D: enumerated type mixed with another type
+  			
+CL(0);
+bsp_pca9685.c(180): warning:  #188-D: enumerated type mixed with another type
+          
+CL(0);//拉低时钟开始数据传输
+bsp_pca9685.c(184): warning:  #188-D: enumerated type mixed with another type
+                  
+DA( (dat & 0x80) >> 7 );
+bsp_pca9685.c(186): warning:  #188-D: enumerated type mixed with another type
+                  
+CL(1);
+bsp_pca9685.c(188): warning:  #188-D: enumerated type mixed with another type
+                  
+CL(0);
+bsp_pca9685.c(208): warning:  #188-D: enumerated type mixed with another type
+  		
+CL(0);
+bsp_pca9685.c(210): warning:  #188-D: enumerated type mixed with another type
+  		
+CL(1);
+bsp_pca9685.c(219): warning:  #188-D: enumerated type mixed with another type
+  	
+CL(0); 
+bsp_pca9685.c: 26 warnings, 0 errors
+compiling dma.c...
+compiling stm32g4xx_hal_adc.c...
+compiling stm32g4xx_hal_rcc.c...
+compiling stm32g4xx_hal_flash_ex.c...
+compiling stm32g4xx_hal.c...
+compiling stm32g4xx_hal_adc_ex.c...
+compiling HzLib.c...
+"no source": Error:  #5: cannot open source input file "..\TFT_LCD\HzLib.c": No such file or directory
+..\TFT_LCD\HzLib.c: 0 warnings, 1 error
+compiling lcd.c...
+"no source": Error:  #5: cannot open source input file "..\TFT_LCD\lcd.c": No such file or directory
+..\TFT_LCD\lcd.c: 0 warnings, 1 error
+compiling stm32g4xx_hal_flash_ramfunc.c...
+compiling stm32g4xx_hal_pwr.c...
+compiling stm32g4xx_hal_cortex.c...
+compiling stm32g4xx_hal_gpio.c...
+compiling stm32g4xx_hal_exti.c...
+compiling stm32g4xx_hal_dma_ex.c...
+compiling stm32g4xx_hal_dma.c...
+compiling stm32g4xx_hal_tim_ex.c...
+compiling stm32g4xx_hal_uart_ex.c...
+compiling system_stm32g4xx.c...
+compiling stm32g4xx_hal_pwr_ex.c...
+compiling stm32g4xx_hal_uart.c...
+compiling stm32g4xx_hal_tim.c...
+"PCA9685\PCA9685.axf" - 2 Error(s), 26 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM.CMSIS.5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32G4xx_DFP.1.2.0.pack
+                Keil.STM32G4xx_DFP.1.2.0
+                STMicroelectronics STM32G4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_PCA9685
+  D:\SF\keil\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  D:\SF\keil\ARM\PACK\Keil\STM32G4xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+Target not created.
+Build Time Elapsed:  00:00:23
+</pre>
+</body>
+</html>

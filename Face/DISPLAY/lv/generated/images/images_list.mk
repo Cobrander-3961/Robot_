@@ -1,0 +1,1 @@
+GEN_CSRCS += _laugh_alpha_172x173.c _scare_alpha_189x192.c
